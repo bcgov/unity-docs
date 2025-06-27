@@ -1,0 +1,33 @@
+site_name: "chefs-techdocs"
+site_description: "CHEFS Technical Documentation"
+docs_dir: "docs"
+repo_url: https://github.com/bcgov/common-hosted-form-service-techdocs
+edit_uri: edit/main/docs/
+plugins:
+  - techdocs-core
+  - ezlinks
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - mkpatcher:
+      location: patcher.py
+nav:
+  - Home: index.md
+  - About CHEFS: About.md
+  - Roadmap: Product-Roadmap.md
+  - Capabilities:
+      - Functionalities: Capabilities/Functionalities.md
+      - Integrations: Capabilities/Integrations.md
+      - Accessibility: Capabilities/Accessibility.md
+      - Form Management: Capabilities/Form-Management.md
+      - Data Management: Capabilities/Data-Management.md
+      - Architecture & State Management: Capabilities/Architecture.md
+  - Components:
+      - Form Builder: Components/Form-Builder.md
+      - Custom: Components/Custom.md
+      - Examples of CHEFS forms and features: Components/Examples.md
+  - Developer:
+      - Contributors: Developer/Contributors.md
+      - Deployment: Developer/Deployment.md
+      - Form.io: Developer/Form.io.md

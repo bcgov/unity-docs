@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "chefs-techdocs"
+  title: "CHEFS Technical Documentation"
+  description: "Documentation for the Common Hosted Forms Service (CHEFS) common component"
+  annotations:
+    github.com/project-slug: bcgov/common-hosted-form-service
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: documentation
+  lifecycle: experimental
+  owner: "bcgov/chefs-team"
